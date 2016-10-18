@@ -1,0 +1,66 @@
+.menu-item1 .mycontent1{
+	padding:5px;
+}
+
+#something1 {
+	display: none;
+	padding:15px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item2 .mycontent2 {
+	padding:5px;
+}
+#something2 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item3 .mycontent3 {
+	padding:5px;
+}
+#something3 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item4 .mycontent4 {
+	padding:5px;
+}
+#something4 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+#manhinhchinh1{
+	display: none;
+}
+
+#button1{
+	margin-top:40px;
+	margin-left:100px;
+}
+#button2{
+	margin-top:75px;
+	margin-left:100px;
+	padding-right: 71px;
+}
+#button3{
+	margin-top:110px;
+	margin-left:100px;
+	padding-right: 60px;
+}
+#manhinhchinh2{
+	display: none;
+}
+.form-mail{
+	position: absolute;
+	border: solid 2px  #c3c3c3;
+	width: 600px;
+}
+div ul li{
+	width: 65%;
+}
+span{
+	padding-left: 5px;
+	padding-right: 5px;
+}

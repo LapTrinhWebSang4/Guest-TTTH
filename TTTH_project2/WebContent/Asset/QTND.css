@@ -1,0 +1,107 @@
+#button1{
+	margin-top:315px;
+	margin-left:100px;
+	padding-right: 40px;
+	width: 150px;
+}
+#button2{
+	margin-top:350px;
+	margin-left:100px;
+	padding-right: 10px;
+	width: 150px;
+} 	
+#button3{
+	margin-top:385px;
+	margin-left:100px;
+	padding-right: 60px;
+	width: 150px;
+}
+#button4{
+	margin-top:455px;
+	margin-left:100px;
+	padding-right: 50px;
+	width: 150px;
+}
+#button5{
+	margin-top:420px;
+	margin-left:100px;
+	padding-right: 50px;
+	width: 150px;
+}
+.thong-tin-dang-nhap{
+	border:solid 3px #2f3df0;
+	margin-top: 200px;
+	margin-left:100px;
+	width: 420px;
+}
+.form-mail{
+	position: absolute;
+	border: solid 2px  #c3c3c3;
+	width: 600px;
+}
+#manhinhchinh1{
+	display: none;
+	margin-right: 100px;
+	padding-top: 100px;
+}
+#manhinhchinh3{
+	display: none;
+	margin-right: 100px;
+	padding-top: 100px;
+}
+#manhinhchinh2{
+	display: none;
+	margin-right: 100px;
+	padding-top: 100px;
+}
+.menu-item1 .mycontent1{
+	padding:5px;
+}
+
+#something1 {
+	display: none;
+	padding:15px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item2 .mycontent2 {
+	padding:5px;
+}
+#something2 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item3 .mycontent3 {
+	padding:5px;
+}
+#something3 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+.menu-item4 .mycontent4 {
+	padding:5px;
+}
+#something4 {
+	display: none;
+	padding:20px;
+	border:solid 1px #c3c3c3;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
