@@ -3,17 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<%@ page import="java.io.*,java.util.*,java.sql.*"%>
-<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
- 
-<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://localhost/ttth"
-     user="root"  password="1234"/>
-
+<meta charset="UTF-8">
 <title>Thông báo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -83,42 +73,52 @@ body {
 						data-toggle="dropdown" href="#">Lịch khai giảng<span
 							class="caret"></span></a>
 						<ul class="dropdown-menu">
-						
-					<sql:query dataSource="${snapshot}" var="result">
-SELECT * from khoahoc;
-</sql:query>
-<c:forEach var="row" items="${result.rows}">
-							<li><a href="Fromdk<c:out value="${row.MaLoai}"/>.jsp">
-							<c:out value="${row.TenKhoaHoc}"/> <c:out value="${row.NgayKhaiGiang}"/></a>
-							
-							</li></c:forEach>
-							
-							
+							<li><a href="Dangkiwindows-win.jsp">Windows 1 tháng 10</a></li>
+							<li><a href="Dangkiandroid-cban.jsp">Android 1 tháng 10</a></li>
 						</ul></li>
 					<li><div class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown"> xem điểm <span
 								class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
-								
-								<sql:query dataSource="${snapshot}" var="result">
-SELECT * from nienkhoa;
-</sql:query>
-<c:forEach var="row" items="${result.rows}">
 								<li class="dropdown-submenu"><a class="test" tabindex="-1"
-									href="#">Khóa <c:out value="${row.MaNienKhoa}"/> <span class="caret"></span></a>
-									
+									href="#">Khóa 100 <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><a class="test" href="#">Windows<span
+												class="caret"></span>
+										</a>
 											<ul class="dropdown-menu">
-											
-											<sql:query dataSource="${snapshot}" var="result">
-SELECT * from bangdiem where MaNienKhoa ='${row.MaNienKhoa}';
-</sql:query>
-<c:forEach var="row2" items="${result.rows}">
-												<li><a href="<c:out value="${row2.LinkGoogle}"/>">Lớp <c:out value="${row2.MaLop}"/></a></li>
-												
-												</c:forEach>
+												<li><a href="#">Lớp lập trình windows 01</a></li>
+												<li><a href="#">Lớp lập trình web 01</a></li>
+												<li><a href="#">Lớp lập trình web 02</a></li>
 											</ul></li>
-									</li></c:forEach>
+										<li class="dropdown-submenu"><a class="test" href="#">Android<span
+												class="caret"></span>
+										</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Lớp lập trình Android cơ bản 01</a></li>
+												<li><a href="#">Lớp lập trình Android cơ bản 02</a></li>
+												<li><a href="#">Lớp lập trình Android nâng cao 01</a></li>
+											</ul></li>
+									</ul></li>
+								<li class="dropdown-submenu"><a class="test" tabindex="-1"
+									href="#">Khóa 99 <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><a class="test" href="#">Windows<span
+												class="caret"></span>
+										</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Lớp lập trình windows 01</a></li>
+												<li><a href="#">Lớp lập trình web 01</a></li>
+											</ul></li>
+										<li class="dropdown-submenu"><a class="test" href="#">Android<span
+												class="caret"></span>
+										</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Lớp lập trình Android cơ bản 01</a></li>
+												<li><a href="#">Lớp lập trình Android cơ bản 02</a></li>
+											</ul></li>
+									</ul></li>
 							</ul>
 						</div></li>
 					<li><a href="tuvan-send.jsp">Tư vấn-hỏi đáp</a></li>
@@ -129,20 +129,42 @@ SELECT * from bangdiem where MaNienKhoa ='${row.MaNienKhoa}';
 		</nav>
 	</div>
 	<div class="container" id="home-thongbao">
-	
-	<sql:query dataSource="${snapshot}" var="result">
-SELECT * from thongbao;
-</sql:query>
-<c:forEach var="row" items="${result.rows}">
 		<div class="jumbotron">
-		
-			
-			<p><c:out value="${row.Ngay}"/>
-			<h4><c:out value="${row.NoiDung}"/></h4>
-			
+			<h3>Tiêu đề 1</h3>
+			<p>nội dung ........................
+			<P>.................................
+			<P>.................................
+			<h4 align="right">
+				<a href="#"><strong>Xem chi tiết</strong></a>
+			</h4>
 		</div>
-		</c:forEach>
-		
+		<div class="jumbotron">
+			<h3>Tiêu đề 2</h3>
+			<p>nội dung ........................
+			<P>.................................
+			<P>.................................
+			<h4 align="right">
+				<a href="#"><strong>Xem chi tiết</strong></a>
+			</h4>
+		</div>
+		<div class="jumbotron">
+			<h3>Tiêu đề 3</h3>
+			<p>nội dung ........................
+			<P>.................................
+			<P>.................................
+			<h4 align="right">
+				<a href="#"><strong>Xem chi tiết</strong></a>
+			</h4>
+		</div>
+		<div class="jumbotron">
+			<h3>Tiêu đề 4</h3>
+			<p>nội dung ........................
+			<P>.................................
+			<P>.................................
+			<h4 align="right">
+				<a href="#"><strong>Xem chi tiết</strong></a>
+			</h4>
+		</div>
 	</div>
 	<footer
 		style="background-color: #4d004d; color: white; padding-top: 25px;">
@@ -151,10 +173,10 @@ SELECT * from thongbao;
 			<div class="bottom-footer" style="border-top: 1px solid #b2b2b2; margin-top: 10px; padding-top: 10px; corlor: red;">
 				<div class="col-md-5">
 				<p>developed by G6</p>
-				<img src="element/diachiicon.png" class="img-rounded" width="20px" height="20px" align="left">
+				<span class="glyphicon glyphicon-home"></span>
 				Cơ sở chính: XX/XX, đường ss, Q.qq, TH. HCM
 				<br>
-				<img src="element/phoneicon.png" class="img-rounded" width="20px" height="20px" align="left">
+				<span class="glyphicon glyphicon-phone-alt"></span>
 				Đt: xx50 43x 8xx
 				</div>
 				<div class="col-md-7">
@@ -169,7 +191,5 @@ SELECT * from thongbao;
 						
 		</div>
 	</footer>
-</body>
-</html>
 </body>
 </html>
