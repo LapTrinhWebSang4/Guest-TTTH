@@ -85,8 +85,8 @@ body {
 						<ul class="dropdown-menu">
 						
 					<sql:query dataSource="${snapshot}" var="result">
-SELECT * from khoahoc;
-</sql:query>
+							SELECT * from khoahoc;
+					</sql:query>
 <c:forEach var="row" items="${result.rows}">
 							<li><a href="Fromdk<c:out value="${row.MaLoai}"/>.jsp">
 							<c:out value="${row.TenKhoaHoc}"/> <c:out value="${row.NgayKhaiGiang}"/></a>

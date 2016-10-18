@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-	<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+		<title>Thong tin ca nhan</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -44,12 +42,6 @@
 		
 	</head>
 	<body class="no-skin">
-	
-	<!-- SQL Source -->
-	<sql:setDataSource var="con" driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://Localhost/ttth" user="root" password="kien2509" />
-	
-	
 	<!--nav-->
 		<div id="navbar" class="navbar navbar-default          ace-save-state">
 			<img src="Asset/header ttth.jpg" style="width: 100%;height: 120px">
@@ -117,13 +109,68 @@
 
 								<b class="arrow"></b>
 							</li>
-							<sql:query var="result_khoahoc" sql="select * from khoahoc"
-							dataSource="${con }" />
-						<c:forEach var="rowsss" items="${result_khoahoc.rows }">
-							<li class=""><a href="chi tiet khoa hoc.html"> <i
-								class="menu-icon fa fa-caret-right"></i> ${rowsss.TenKhoaHoc }
-						</a> <b class="arrow"></b></li>
-						</c:forEach>
+							<li class="">
+								<a href="chi tiet khoa hoc.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 1
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="typography.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 2
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 3
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="buttons.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 4
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="content-slider.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 5
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="treeview.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 6
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="jquery-ui.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Khóa học 7
+								</a>
+
+								<b class="arrow"></b>
+							</li>
 						</ul>
 					</li>
 
